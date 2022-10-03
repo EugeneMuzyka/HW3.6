@@ -27,3 +27,13 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(Container(
+//     color: Colors.white,
+//     child: Image.network("https://img.icons8.com/color/480/flutter.png"),
+//   ));
+// }  //изображение из сети
