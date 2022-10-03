@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// ignore: unused_import
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() => runApp(const MyApp());
 
@@ -15,7 +15,12 @@ class MyApp extends StatelessWidget {
             child: Stack(
               fit: StackFit.expand,
               children: <Widget>[
-                Image.asset('assets/images/icons8-flutter.svg')
+                SvgPicture.asset(
+                  "images/icons8-flutter.svg",
+                  semanticsLabel:
+                      'SVG From asset folder', //вариант локальной загрузки
+                )
+                // )
               ],
             ),
           )),
